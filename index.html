@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Vocabulary Learning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>English Vocabulary Learning</h1>
+    <p>Learn English Vocabulary Through Interactive Practice</p>
+</header>
+
+<nav>
+    <button onclick="showPage('home')">Home</button>
+    <button onclick="showPage('vocabulary')">Vocabulary</button>
+    <button onclick="showPage('quiz')">Quiz</button>
+    <button onclick="showPage('about')">About</button>
+</nav>
+
+<main>
+
+    <!-- HOME -->
+    <section id="home" class="page active">
+        <h2>Welcome!</h2>
+
+        <p>
+            Welcome to the English Vocabulary Learning Website.
+            This website helps students learn and practice English vocabulary.
+        </p>
+
+        <button class="start-btn" onclick="showPage('vocabulary')">
+            Start Learning
+        </button>
+    </section>
+
+
+    <!-- VOCABULARY -->
+    <section id="vocabulary" class="page">
+
+        <h2>Vocabulary Learning</h2>
+
+        <div class="vocabulary-card">
+
+            <h3 id="word">Beautiful</h3>
+
+            <p id="meaning">
+                Meaning: Cantik / Indah
+            </p>
+
+            <p id="example">
+                Example: The garden is beautiful.
+            </p>
+
+            <button onclick="speakWord()">🔊 Listen</button>
+            <button onclick="nextWord()">➡️ Next Word</button>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUIZ -->
+    <section id="quiz" class="page">
+
+        <h2>Vocabulary Quiz</h2>
+
+        <div id="quiz-container">
+
+            <h3 id="question"></h3>
+
+            <div id="answers"></div>
+
+            <button id="next-question" onclick="nextQuestion()">
+                Next Question
+            </button>
+
+        </div>
+
+        <div id="result" class="result"></div>
+
+        <button id="restart" onclick="restartQuiz()">
+            Restart Quiz
+        </button>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="page">
+
+        <h2>About This Website</h2>
+
+        <p>
+            This website was developed as an English learning media
+            focusing on vocabulary learning and interactive practice.
+        </p>
+
+        <p>
+            Users can learn vocabulary, listen to pronunciation,
+            and practice through interactive quizzes.
+        </p>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>English Vocabulary Learning © 2026</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
